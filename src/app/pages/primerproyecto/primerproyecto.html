@@ -1,0 +1,55 @@
+<h1>El primer proyecto</h1>
+
+Vamos a generar el primer proyecto de Angular y para ello necesitamos abrir el terminal y ejecutar la siguiente orden<br>
+
+<pre class="console">
+  >ng new primerproyecto
+</pre>
+<br>
+Al hacerlo, nos hará una serie de preguntas (el tipo de CSS, si va a usar SSR (server-side rendering) o SSG
+(Static Site Generation) y si vamos a utilizar alguna herramienta de IA para el código.<br>
+Dejemos las opciones por defecto:<br>
+<pre class="console">
+  ✔ Which stylesheet system would you like to use? CSS
+  ✔ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No
+  ✔ Which AI tools do you want to configure with Angular best practices? https://angular.dev/ai/develop-with-ai None
+  CREATE primerproyecto/README.md (1467 bytes)
+  CREATE primerproyecto/.editorconfig (314 bytes)
+  CREATE primerproyecto/.gitignore (604 bytes)
+  CREATE primerproyecto/angular.json (1927 bytes)
+  CREATE primerproyecto/package.json (961 bytes)
+  CREATE primerproyecto/tsconfig.json (957 bytes)
+  CREATE primerproyecto/tsconfig.app.json (429 bytes)
+  CREATE primerproyecto/tsconfig.spec.json (441 bytes)
+  CREATE primerproyecto/.vscode/extensions.json (130 bytes)
+  CREATE primerproyecto/.vscode/launch.json (470 bytes)
+  CREATE primerproyecto/.vscode/tasks.json (938 bytes)
+  CREATE primerproyecto/src/main.ts (222 bytes)
+  CREATE primerproyecto/src/index.html (300 bytes)
+  CREATE primerproyecto/src/styles.css (80 bytes)
+  CREATE primerproyecto/src/app/app.css (0 bytes)
+  CREATE primerproyecto/src/app/app.spec.ts (681 bytes)
+  CREATE primerproyecto/src/app/app.ts (296 bytes)
+  CREATE primerproyecto/src/app/app.html (20104 bytes)
+  CREATE primerproyecto/src/app/app.config.ts (313 bytes)
+  CREATE primerproyecto/src/app/app.routes.ts (77 bytes)
+  CREATE primerproyecto/public/favicon.ico (15086 bytes)
+</pre>
+<br>
+Al hacerlo vemos que nos ha creado una estructura de carpetas y ficheros que nos sirven de base para comenzar a trabajar.<br>
+Vemos la siguiente estructura:<br>
+<img src="imagen02.png" alt="Estructura"><br>
+El código de la página se colocará en la carpeta src/app (ya veremos cómo). De momento nos encontramos con varios ficheros
+app que contienen código html, typescript, las rutas de la aplicación, etc. Los comentaremos más adelante.<br>
+Vamos a comprobar que nuestro proyecto funciona ejecutándolo desde la línea de comandos:<br>
+<pre class="console">
+  ng serve
+</pre>
+<br>
+<img src="imagen03.png" alt="ejecucion"><br>
+Vemos que se ha lanzado el proceso y que permite conectarse a la url http://localhost:4200.<br>
+Nos conectamos y aparece:<br>
+<img src="imagen04.png" alt="miprimerproyecto">
+<br>
+Nuestro primer proyecto de Angular se ha ejecutado con éxito...<br>
+Pero no es más que un Hello World de momento.

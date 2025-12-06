@@ -1,0 +1,32 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  color: #aa0000;
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo {
+  height: 100px; /* o el tamaño que quieras */
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 70px); /* ajusta según el header */
+}
+
+.sidebar {
+  width: 220px;
+  background: #f5f5f5;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

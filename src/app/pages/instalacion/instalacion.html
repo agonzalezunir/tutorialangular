@@ -1,0 +1,41 @@
+<h1>Instalación de Angular</h1>
+  La instalación de <b>Angular</b> requiere de varios componentes.<br>
+  En el caso que nos ocupa, lo hemos instalado en una máquina con Linux Manjaro así que los ejemplos están realizados con este sistema operativo.<br>
+  <br>
+  Las necesidades de instalación según la documentación oficial son las siguientes:
+  <ul>
+    <li><b>Node.js</b>, versión 20.19.0 o más moderna</li>
+    <li><b>ClI de Angular</b>, para poder lanzar los comandos Angular.</li>
+    <li><b>TypeScript</b></li>
+    <li><b>IDE de programación</b>. En nuestro caso usaremos JetBraing WebStorm</li>
+    <li><b>Terminal</b>, para lanzar los comandos de la CLI de Angular</li>
+  </ul>
+<br>
+<br>
+En nuestro caso, comenzamos por abrir una ventana de terminal y ejecutar con el administrador de paquetes de Manjaro la instalación de Node.js.
+<br>
+<pre class="console">
+  >pamac install nodejs
+  Preparando...
+  ...
+
+  >node --version
+  v24.8.0
+</pre>
+<br><br>
+Una vez realizada la instalación de node.js es necesario instalar la CLI de Angular. Para ello utilizaremos el gestor de paquetes de Node.js, npm.
+<br>
+<pre class="console">
+  >sudo npm install -g @angular/cli
+  added 315 packages in 15 s
+</pre>
+<br>
+A continuación realizamos la instalación de TypeScript desde la línea de comandos.
+<br>
+<pre class="console">
+  >sudo npm install -g typescript
+  >tsc -v
+  Version 5.9.3
+</pre>
+<br>
+Con todo instalado ya estamos en disposición de crear el primer proyecto y comenzar a trabajar con <b>Angular</b>.

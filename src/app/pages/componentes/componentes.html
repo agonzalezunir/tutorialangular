@@ -1,0 +1,55 @@
+<h1>Componentes (I)</h1>
+La estructuración de un proyecto de Angular se basa en componentes.<br>
+Cada componente tiene una serie de ficheros que sirven para diferentes cosas.<br>
+
+Vamos a seguir la estructuración de esta página de tutorial y vamos a:<br>
+<ul>
+  <li>Crear un componente de cabecera</li>
+  <li>Crear un componente de barra de navegación</li>
+  <li>Crear un componente de visualización (como el de este texto)</li>
+  <li>Ver todo lo que tenemos que tocar para conseguir que funcione...</li>
+</ul>
+<br>
+La creación de componentes se realiza mediante la línea de comandos.
+Por ejemplo, en nuestro caso, si queremos crear el componente 'introduccion' (que correspondería con el primer capítulo
+de este tutorial), abriríamos el terminal, iríamos a la ruta src/app de nuestro proyecto y ejecutaríamos:
+
+<pre class="console">
+  >ng generate component pages/introduccion
+  CREATE src/app/pages/introduccion/introduccion.css (0 bytes)
+  CREATE src/app/pages/introduccion/introduccion.spec.ts (573 bytes)
+  CREATE src/app/pages/introduccion/introduccion.ts (210 bytes)
+  CREATE src/app/pages/introduccion/introduccion.html (27 bytes)
+</pre>
+<br>
+
+Vemos que nos ha creado cuatro ficheros:<br>
+<ul>
+  <li>introduccion.css es el fichero de estilos, al igual que en cualquier aplicación web</li>
+  <li>introducion.html contiene el código html del componente</li>
+  <li>introduccion.ts es el archivo principal del componente, define su clase, sus propiedades, métodos y conexión con HTML/CSS</li>
+  <li>introduccion.spec.ts incluye tests unitarios para comprobar que el componente funciona como debería</li>
+</ul>
+
+Nosotros nos vamos a centrar sobre todo en los ficheros html y css del componente pero sin perder de vista que hay una
+clase que exporta y que necesitaremos para la navegación.<br>
+
+El componente de cabecera como tal lo incluiremos en el archivo app.html.<br>
+Vamos entonces a crear el componente de navegación y ya tendremos todo lo necesario para hacer el primer esbozo del tutorial:<br>
+
+<pre class="console">
+  >ng generate component layout/navbar
+  CREATE src/app/layout/navbar/navbar.css (0 bytes)
+  CREATE src/app/layout/navbar/navbar.spec.ts (573 bytes)
+  CREATE src/app/layout/navbar/navbar.ts (210 bytes)
+  CREATE src/app/layout/navbar/navbar.html (27 bytes)
+</pre>
+<br>
+
+Nos bajamos un logo de Angular para poner más bonita la cabecera y actualizamos el contenido del fichero app.html:<br>
+<img src="imagen06.png" alt="app.html"><br><br>
+Vemos que hemos añadido el logo en la cabecera, un contenedor a la izquierda para la navgegación y un contenido a la derecha con 'router-outlet' que nos permitirá navegar por la aplicación.<br>
+Editamos el fichero app.css para incluir los estilos de la aplicación principal:<br>
+<img src="imagen07.png" alt="CSS App"><br>
+
+

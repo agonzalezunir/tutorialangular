@@ -1,0 +1,32 @@
+:host {
+  font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+pre, code {
+  font-family: "Source Code Pro", "Courier New", monospace;
+  background: #1e1e1e;
+  color: #cfcfcf;
+  font-size: 0.95rem;
+}
+
+/* Bloques <pre> */
+pre {
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid #333;
+  margin: 1.2rem 0;
+}
+
+/* Inline <code> dentro de párrafos */
+code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+/* Estilo terminal “verde retro” opcional */
+pre.console {
+  background: #0d0d0d;
+  color: #00c853; /* verde terminal */
+  border: 1px solid #003f1a;
+}

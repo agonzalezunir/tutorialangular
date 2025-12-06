@@ -1,0 +1,32 @@
+<h1>Componentes (II)</h1>
+Con los ficheros html y css de la aplicación listos, es momento de revisar los css y los html de los componentes que hemos creado.<br>
+En el caso del componente navbar, incluiríamos el siguiente código:<br>
+<img src="imagen08.png" alt="navbar.html"><br><br>
+Lo que conseguimos con este código es que haya un enlace en la navegación con un routerlink para poder mostrar en la aplicación
+el contenido del componente. En este caso, nos mostraría el componente Introducción.<br>
+Añadimos también un poco de css para pintarlo mejor:<br>
+<img src="imagen09.png" alt="navbar.css"><br><br>
+
+Vamos ahora a por el código html del componente introducción... Que como podemos ver corresponde con el primer capítulo de este tutorial:<br>
+<img src="imagen10.png" alt="introducion.html"><br><br>
+
+Lo que nos falta ahora es ajustar las rutas para que el routerlink funcione adecuadamente y eso lo hacemos en el fichero
+<b>app.routes.ts</b> donde incluiremos el import de la clase del componente y su ruta:<br>
+
+<img src="imagen11.png" alt="rutas"><br><br>
+El último path que aparece, sin valor, nos hace la redirección a introducción cuando se pone una ruta que no sea correcta.<br>
+Con esto ya podríamos ejecutar un ng serve y ver la primera versión del tutorial en el navegador:<br>
+<img src="imagen12.png" alt="web"><br>
+<br>
+A continuación crearemos el resto de capítulos del tutorial:
+<ul>
+  <li>Instalación</li>
+  <li>Primer proyecto</li>
+  <li>Estructura del proyecto</li>
+  <li>Componentes</li>
+  <li>Publicación en Github Pages</li>
+</ul>
+
+
+
+
